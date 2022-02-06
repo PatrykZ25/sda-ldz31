@@ -1,10 +1,10 @@
 # Spring Workshops plan
-## Workshops 1 - 09.01.2021 - [Intro]
-## Workshops 2 - 22.01.2021 - [Beginner]
-## Workshops 3 - 23.01.2021 - [Advanced]
-## Workshops 4 - 29.01.2021 - [Advanced]
-## Workshops 5 - 30.01.2021 - [Group work]
-## Workshops 6 - 05.02.2021 - [Group work]
+## Workshops 1 - 09.01.2022 - [Intro]  ✔
+## Workshops 2 - 22.01.2022 - [Beginner]  ✔
+## Workshops 3 - 23.01.2022 - [Advanced]  ✔
+## Workshops 4 - 29.01.2022 - [Advanced]  ✔
+## Workshops 5 - 05.02.2022 - [Advanced]  ✔
+## Workshops 6 - 06.02.2022 - [Extra]  ✔
 
 # Modules
 
@@ -17,7 +17,7 @@
 * SPRING BOOT JMS
 * SPRING BOOT JPA
 * SPRING BOOT MONGODB
-* SPRING BOOT REST
+* SPRING BOOT R `EST
 * SPRING BOOT SCHEDULER
 * SPRING BOOT TRANSACTIONS
 * SPRING BOOT VALIDATOR
@@ -45,20 +45,84 @@
 8. Try to print all beans ✔️
 9. Change log level for some packages  ✔
 10. Define log level for our package  ✔
-11. Write simple junit test
-12. Expose Greeting controller method + write test, for example mockMvc
-13. Define DAO layer with 2 database types (H2, HARDCODED) chosoen via factory
-14. Pass usage of dedicated db via property file
-15. Add dependency like lombok + define loggers
-16. Add scheduler for simple logging
-17. Chcuk Norris Jokes! Log them in scheduler from website
-18. Add serialization/deserialization
-19. Add proper layers implementation
-20. Change properties file to yml file
-21. Different ways of autowiring beans
+11. Write simple junit test  ✔
+12. Expose Greeting controller method + write test, for example mockMvc  ✔
+13. Define DAO layer with 2 database types (H2, HARDCODED) chosen via factory ❌
+14. Pass usage of dedicated db via property file ✔
+15. Add dependency like lombok + define loggers ✔
+16. Add scheduler for simple logging ✔
+17. Chuck Norris Jokes! Log them in scheduler from website ✔
+18. Add serialization/deserialization ✔
+19. Implement Mapstruct mapping between dao & dto ✔
+20. Add proper layers implementation ✔
+21. Change properties file to yml file ❌
+22. Different ways of autowiring beans ✔
+23. Sample DB usage (List of Jokes?) ✔
+24. Service Layer (RestTemplate, maybe HttpClient)  ✔
+25. Tests for service layer  ✔
+26. Chuck Norris Jokes Collector controller implementation ✔
+    1. Usage of: http://api.icndb.com API ✔
+    2. REST GET ✔
+    3. REST POST ✔
+    4. REST PUT ❌
+    5. REST DELETE ❌
+27. Load json data from file and use in test to compare values ❌
+28. Save data to file in service ❌
+29. Hexagonal architecture proposal for application (separated module) ❌
+30. Validation request (POST) ✔
+31. Deployment to Cloud: ❌
+    1. https://www.heroku.com/
+32. Repository ✔
+33. Profiles on repository (Mock DB + H2) ✔
+    1. Define different configurations for repos ✔
+34. Basic tests  ✔
+35. H2 DB schema via sql file ✔
+36. Connect with Service ✔
+37. Connect withDedicatedController  ✔
+38. Pass custom properties via @Value annotation  ✔
+39. Mapstruct usage ✔
+40. Manual mapper  ✔
+41. Implement Scheduler ✔
+    1. save random jokes to DB  ✔
+42. Aspects  ✔
+    2. LogExecutionTimeAspect  ✔
+    3. LogBefore some method  ✔
+    4. Our own annotation  ✔ 
+43. Validation (@Valid)
+44. ConstraintViolation
+45. JMS Listener + Producer
+46. Thymeleaf + Form 
+47. Mapstruct
+    1. Add to project - do mapper
+48. Validation Request/Response 
+49. H2 Added
+50. NoSQL - presentation 
+
+LAST CLASSES:
+* Reminder what we did (CSV Printer)
+* BindingResult support in forms
+* Reflection
+* SpringSecurity - how to turn on
+* NoSQL - MongoDB Workshops
+* Cache + Cacheable
+* jdbcTemplate autowired + execute
+** pure insert
+** pure select
+* Transactional
+* Add WebJars
+50. Add webjar bootstrap:
+```
+<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+<dependency>
+    <groupId>org.webjars</groupId>
+    <artifactId>bootstrap</artifactId>
+    <version>5.1.3</version>
+</dependency>
+```
+---------------------
 
 ## 3 layers app
-# Sample controllers
+# Sample controllers ✔
 # Sample DB with repo for H2
 
 ## Generate sample Spring Boot App
@@ -173,7 +237,7 @@ deps:
 
 `Task 10 - VALIDATOR`
 
-Write simple validator extending class WebMvcConfigurerAdapter + integration tests + annotations javax.validation.constraints
+Write simple validator extending class WebMvcConfigureAdapter + integration tests + annotations javax.validation.constraints
 
 deps:
 * spring-boot-starter-thymeleaf
@@ -194,10 +258,10 @@ deps:
 `Task 13 - FILE-UPLOADER`
 
 File Uploader which will:
-* download file choosen via form
+* download file chosen via form
 * list downloaded files
-* doanload file sent by user
-* delete choosen files
+* download file sent by user
+* delete chosen files
 
 deps:
 * spring-boot-starter-thymeleaf
@@ -215,7 +279,7 @@ deps:
 ## Beans
 ## Component etc.
 ## Autowired
-## Polimorphism in Spring
+## Polymorphism in Spring
 
 # More Theory
 
